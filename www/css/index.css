@@ -206,44 +206,65 @@ button.camera-control:hover {
 }
 
 .gb-grocery-items-inner{
-  border: 2px solid #b3e5fc;
+  border: 2px solid #B6B6B6;
   height: auto;
   overflow: hidden;
   padding-bottom: 60px;
   margin-top: 15px;
   position: relative;
-
+  text-align: center;
+  font-size: .7em;
 }
 .gb-grocery-items-inner a{
-  padding: 10px 15px;
-  background-color: #b3e5fc;
+  padding: 20px 15px;
+  background-color: #2196F3;
   bottom: 0;
   left: 0;
   right: 0;
   position: absolute;
-  font-weight: 600;
+  --font-weight: 600;
+  text-align: center;
   text-decoration: none;
+  color:#B3E5FC;
 }
 .gb-grocery-items-inner a:hover{
-  background-color: black;
-  color: white;
+  background-color: #607D8B;
+  color: #F5F5F5;
 }
 .element-container{
-  font-size: 2em;
+  font-size: 2em !important;
   position: block;
   height: auto;
   width: 100%;
   overflow: hidden;
+  background-color: #FFFFFF;
+  color:#607D8B;
+  display: block !important;
 }
 
 
 .element-container2{
-  font-size: 1.2em;
+  font-size: 1.7em !important;
   position: block;
   height: auto;
   width: 100%;
   overflow: hidden;
-  border: 1px solid #b3e5fc;;
+  border: 1px solid #b3e5fc;
+  background-color: #BBDEFB;
+  color: #727272;
+  display: block !important;
+}
+
+.element-container2-icon{
+  font-size: 1em !important;
+  position: block;
+  height: auto;
+  width: 100%;
+  overflow: hidden;
+  border: 1px solid #b3e5fc;
+  background-color: #BBDEFB;
+  color: #727272;
+  display: inline !important;
 }
 
 * {
@@ -277,7 +298,7 @@ body {
   height: auto;
   line-height: 45px;
   --background: #2e2e2e;
-  background-color: #0288d1;  
+  background-color: #1976D2;  
   padding: 0;
   color: #eee;
   font-size: 20px;
@@ -293,6 +314,7 @@ body {
   padding: 10px 15px;
   font-size: 1.2em;
   font-weight: 600;
+  color: #727272;
 }
 #total-amount{
   float: right;
@@ -344,8 +366,7 @@ body {
   padding: 0 10px;
   height: auto;
   line-height: 40px;
-  border-top: 1px solid #fff;
-  background-color: #fafafa;
+  background-color: #CCCCCC;
   font-size: 14px;
   float: left;
   width: 50%;
@@ -358,6 +379,8 @@ body {
   width: 100% !important;
   font-size: 1.5em !important;
   font-weight: 400;
+  background-color: #607D8B;
+  color:#cfd8dc;
 }
 
 #cleardata{
@@ -371,13 +394,13 @@ body {
 }
 
 .table-properties{
-  border: 1px solid #2e2e2e;
+  border: 1px solid #607D8B;
   float: left;
   width: 33.33%;
   background-color: white;
   font-weight: 300;
   font-size: 1em;
-  color: #2e2e2e;
+  color: #607D8B;
 }
 
 .defaultMessage{

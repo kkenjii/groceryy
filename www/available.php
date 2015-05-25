@@ -30,8 +30,9 @@
         <script type="text/javascript" charset="utf-8" src="phonegap-0.9.2.js"></script>
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js?ver=1.4.2"></script>
         <script type="text/javascript" src="js/iscroll.js"></script>
-         <link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
         
+        <link rel="stylesheet" href="font-awesome-4.3.0/css/font-awesome.min.css">
+
         <script type="text/javascript" src="js/processing/processing.min.js"></script>  
 <script type="text/javascript">
 
@@ -45,8 +46,9 @@ function loaded() {
     <body onload="loaded()">
             <div id="header">
          <ul class="menu">
-                <li><a class="main-menu" href="index.php"><i class="fa fa-home"></i> HOME</a></li>
-                <li><a class="main-menu" href="list.php"><i class="fa fa-shopping-cart"></i> CART</a></li>
+                <li><a class="main-menu" href="index.php"><i class="fa fa-home" style="display:inline !important;"></i> </a></li>
+                <li><a class="main-menu" href="#" style="background-color:#0288D1; color:#BBDEFB;"><i class="fa fa-calendar" style="display:inline !important;"></i> </a></li>
+                <li><a class="main-menu" href="list.php"><i class="fa fa-shopping-cart" style="display:inline !important;"></i> </a></li>
             </ul>
         </div>
 
@@ -78,25 +80,32 @@ function loaded() {
 
 
             for (var i = 0; i < gatheredPosts.length; i++) {
-                    var linkText = document.createTextNode("+ add me to cart");
+                    var linkText = document.createTextNode(" Add me to Cart");
                     var link = document.createElement("a");
                     var divcont = document.createElement("div");
                     var divcont2 = document.createElement("div");
-                    divcont.className = "element-container";
-                    divcont2.className = "element-container2"
+                    divcont.className = "element-container fa";
+                    divcont2.className = "element-container2 ";
+                    
+                    var monIcon = document.createElement("i");
+                    monIcon.className = "element-container2-icon fa fa-money fa-2x";
+
                     link.value = i;
                     link.id = "item"+i;
                     link.href = "#";
                     link.appendChild(linkText);
+                    link.className ="fa fa-cart-plus fa-2x";
+
                     var x = document.createElement("div");
                     x.className="gb-grocery-items-inner"
                     var y = document.createElement("div");
                     y.className="gb-grocery-items"
                     var z = document.createElement("li")
                     var t = document.createTextNode(gatheredPosts[i].title);
-                    var tt = document.createTextNode("Price: "+gatheredPosts[i].price);
+                    var tt = document.createTextNode(" Price:"+gatheredPosts[i].price+" ");
                     divcont.appendChild(t);
                     divcont2.appendChild(tt);
+                    divcont2.appendChild(monIcon);
                     x.appendChild(divcont);
                     x.appendChild(divcont2);
                     x.appendChild(link);

@@ -24,7 +24,8 @@
         <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=medium-dpi" />
         <link rel="stylesheet" type="text/css" href="css/index.css" />
-
+        <link rel="stylesheet" href="font-awesome-4.3.0/css/font-awesome.min.css">
+        
         <script type="text/javascript" src="../plugins/iscroll.js"></script>
 
         <script type="text/javascript" charset="utf-8" src="phonegap-0.9.2.js"></script>
@@ -45,18 +46,20 @@ function loaded() {
 
         <div id="header">
                 <ul class="menu">    
-                    <li><a class="main-menu" href="index.php">HOME</a></li>
-                    <li><a class="main-menu" href="available.php">SHOP</a></li>
-                    <li><a class="main-menu" href="list.php">CART</a></li>
-                    <button  onmouseover="this.style.backgroundColor= '#d32f2f'" onmouseout="this.style.backgroundColor='#f44336'" id="cleardata" onclick="rereload()">CLEAR CART</button>
+                    <li><a class="main-menu" href="index.php"><i class="fa fa-home" style="display:inline !important;"></i> </a></li>
+                <li><a class="main-menu" href="available.php" ><i class="fa fa-calendar" style="display:inline !important;"></i> </a></li>
+                <li><a class="main-menu" href="#" style="background-color:#0288D1; color:#BBDEFB;"><i class="fa fa-shopping-cart" style="display:inline !important;"></i> </a></li>
+            <button  onmouseover="this.style.backgroundColor= '#d32f2f'" onmouseout="this.style.backgroundColor='#f44336'" id="cleardata" onclick="rereload()">CLEAR CART</button>
                 </ul>
             <div class="table-properties">ITEM</div><div class="table-properties">AMOUNT</div><div class="table-properties">SUBTOTAL</div>
         </div>
 
         <div id="wrapper" class="wrapper-list">
         <div id="scroller">
+            <form action="">
             <ul id="items-container">
             </ul>
+            </form
         </div>
         </div>
 
@@ -87,8 +90,12 @@ function myFunction() {
             var sumtotal = 0.00;
             if(window.localStorage.getArray("Cart")!=null){
                 for (var i = 0; i < shoppingCart.length; i++) {
+
                         var z = document.createElement("li");
-                        var t = document.createTextNode(shoppingCart[i].carttitle+" ("+shoppingCart[i].carttimes+") - "+parseFloat(shoppingCart[i].cartprice)*parseFloat(shoppingCart[i].carttimes));
+                        var t = document.createTextNode(" "+shoppingCart[i].carttitle+" ("+shoppingCart[i].carttimes+") - "+parseFloat(shoppingCart[i].cartprice)*parseFloat(shoppingCart[i].carttimes));
+                        var checkBoxes = document.createElement("input");
+                        checkBoxes.type = "checkbox";
+                        z.appendChild(checkBoxes);
                         z.appendChild(t);
 
                         var int1 = parseFloat(shoppingCart[i].carttimes);

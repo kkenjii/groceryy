@@ -27,7 +27,7 @@
 
         <script type="text/javascript" charset="utf-8" src="phonegap-0.9.2.js"></script>
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js?ver=1.4.2"></script>
-<link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="font-awesome-4.3.0/css/font-awesome.min.css">
         
         <script type="text/javascript" src="js/processing/processing.min.js"></script>  
 
@@ -74,7 +74,7 @@
                          font-size: 1.5em; 
                          padding: 2%; 
                          font-weight: 60;
-                         background-color: #607d8b; color:#cfd8dc;"><i class="fa fa-plus-square-o fa-3x"></i> </button>
+                         background-color: #607d8b; color:#cfd8dc;"><i class="fa fa-plus-square-o fa-2x"> </i> </button>
         </form>
         <!--<div id="items-container">
             <div class="gb-grocery-items half-wit"><div class="gb-grocery-items-inner">CHEESE - Php 100.00 <a id="item-1" name="cheese" href="#">ADD TO CART</a></div></div>
