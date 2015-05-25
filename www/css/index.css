@@ -227,16 +227,17 @@ button.camera-control:hover {
 }
 .element-container{
   font-size: 2em;
-  position: relative;
+  position: block;
   height: auto;
   width: 100%;
   overflow: hidden;
 }
 .element-container2{
   font-size: 1.2em;
-  position: relative;
+  position: block;
   height: auto;
   width: 100%;
+  overflow: hidden;
   border: 1px solid #b3e5fc;;
 }
 
