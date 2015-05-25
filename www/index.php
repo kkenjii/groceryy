@@ -36,7 +36,7 @@
     <body>
         <a class="gb-menu-items" href="add.php"><div style="background-color: #FFFFFF; color:#727272;"><i class="fa fa-plus"></i> ADD ITEM</div></a>
         <a class="gb-menu-items" href="available.php"><div style="background-color: #0288D1; color:#b3e5fc;"><i class="fa fa-calendar"></i> SHOP</div></a>
-        <a class="gb-menu-items" href="list.php"><div style="background-color: #FFFFFF; color:#727272;">Cart</div></a>
+        <a class="gb-menu-items" href="list.php"><div style="background-color: #FFFFFF; color:#727272;">LIST CATEGORY</div></a>
         <button id="cleardata" onclick="myFunction()" style="background-color: #607d8b; color:#cfd8dc;">CLEAR DATA</button>
 
  <script type="text/javascript">
