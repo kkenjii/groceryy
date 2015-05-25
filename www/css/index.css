@@ -181,7 +181,7 @@ button.camera-control:hover {
   border-right: 1px solid white;
 }
 .menu li a{
-  padding: 10px 15px;
+  padding: 15px 15px;
 }
 .menu li a:hover, .menu li a:active, .menu li a:focus{
   --color: green;

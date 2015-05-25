@@ -59,7 +59,7 @@ function loaded() {
             <form action="">
             <ul id="items-container">
             </ul>
-            </form
+            </form>
         </div>
         </div>
 
