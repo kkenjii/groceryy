@@ -57,7 +57,18 @@ function loaded() {
             </ul>
         </div>
         </div>
+
+
         <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+        $(function() {
+    while( $('#element-container div').height() > $('#element-container').height() ) {
+        $('#element-container div').css('font-size', (parseInt($('#element-container div').css('font-size')) - 1) + "px" );
+    }
+});
+
+        </script>
+
         <script type="text/javascript">
             app.initialize();
 
